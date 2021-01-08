@@ -74,6 +74,12 @@ $ make init_workspace
 - Also gpg key will be imported to decrypt secrets.
 - Project and monitoring namespace will be created in k8s cluster
 
+During script execution you will be asked to provide password for importing gpg key. 
+
+```
+secret
+```
+
 4. As k8s cluster and workcpace are ready we can deploy applications to the clsuter
 
 Before deploying we need to reload gpg agent to be able to decrypt the secrets.
@@ -87,7 +93,11 @@ Now deploy applications
 ```shell
 $ make deploy_apps
 ```
+During application deploying you will be asked to provide password for secret decryption. 
 
+```
+secret
+```
 
 5. Now it's to for monitoring
 We are going to use Grafana, Prometheus and Alertmanager. There are separate comands to make portforwaring for each of them but you can do it with only one of it.
