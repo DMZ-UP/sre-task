@@ -1,1 +1,1 @@
-# sre-task
+# konux-task
