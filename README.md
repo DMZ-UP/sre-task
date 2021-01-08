@@ -117,7 +117,7 @@ During command implementation you will find Grafana credentials for UI.
 6. Now we can initiate the load to the applications.
 
 ```shell
-make run_app_load_on_app
+$ make run_app_load_on_app
 ```
 
 In few minutes you should get alet notification to you email.
@@ -125,5 +125,5 @@ In few minutes you should get alet notification to you email.
 7. After that we can destroy k8s cluster
 
 ```shell
-terraform destroy
+$ terraform destroy
 ```
