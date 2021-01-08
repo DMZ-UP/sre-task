@@ -74,7 +74,7 @@ $ make init_workspace
 - Also gpg key will be imported to decrypt secrets.
 - Project and monitoring namespace will be created in k8s cluster
 
-During script execution you will be asked to provide password for importing gpg key. 
+During script execution you will be asked to provide passphrase for importing gpg key.
 
 ```
 secret
@@ -93,7 +93,7 @@ Now deploy applications
 ```shell
 $ make deploy_apps
 ```
-During application deploying you will be asked to provide password for secret decryption. 
+During application deploying you will be asked to provide passphrase to decrypt secrets.
 
 ```
 secret
