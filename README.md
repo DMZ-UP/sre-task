@@ -70,13 +70,13 @@ init_workspace                  - initiate workspace by importing kubeconfig, gp
 ```shell
 $ make init_workspace
 ```
-- You will be asked to enter zone and cluster name to get kubeconfig. 
-- Also gpg key will be imported to decrypt secrets. 
+- You will be asked to enter zone and cluster name to get kubeconfig.
+- Also gpg key will be imported to decrypt secrets.
 - Project and monitoring namespace will be created in k8s cluster
 
 4. As k8s cluster and workcpace are ready we can deploy applications to the clsuter
 
-Before deploying we need to reload gpg agent to be able to decrypt the secrets. 
+Before deploying we need to reload gpg agent to be able to decrypt the secrets.
 
 ```shell
 $ GPG_TTY=$(tty)
@@ -93,7 +93,7 @@ $ make deploy_apps
 We are going to use Grafana, Prometheus and Alertmanager. There are separate comands to make portforwaring for each of them but you can do it with only one of it.
 
 ```shell
-$ all_portforward
+$ make all_portforward
 ```
 
 During command implementation you will find Grafana credentials for UI.
